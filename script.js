@@ -5,8 +5,8 @@ const firebaseConfig = {
   projectId: "futureme-9c4c4",
   storageBucket: "futureme-9c4c4.firebasestorage.app",
   messagingSenderId: "300004949198",
-  appId: "1:300004949198:web:4f77f680ced24d6f6c249f",
-  measurementId: "G-01ZBRF29PD"
+  appId: "1:300004949198:web:75908e6819d07c8e6c249f",
+  measurementId: "G-TDLE7PGLMH"
 };
 
 // Initialize Firebase
