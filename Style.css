@@ -19,12 +19,11 @@ body {
 }
 
 nav {
-    font-size : 25px;
+    font-size : 1.3rem;
     font-family : 'Inter';
     display : flex;
+    left : 1.3;
     gap : 10px;
-    padding : 40px;
-    position : fixed;
     color : #0000EE;
 }
 
@@ -35,6 +34,37 @@ h1 {
     color: #1C1C1E;
     margin-bottom: 20px;
 }
+h3{
+    font-size : 1.5rem;
+    font-weight : 600;
+    color: #6b6767;
+    letter-spacing : -0.5px;
+    margin-bottom : -0.7rem
+}
+p{
+    font-size : 1.3rem;
+    font-weight : 500;
+    letter-spacing : -0.5px;
+    margin-bottom : 20px;
+}
+p, .star-list {
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+}
+
+.star-list {
+    list-style: none; /* remove default bullets */
+    padding-left: 1.2em; /* indent to match normal list look */
+}
+
+.star-list li::before {
+    content: "* "; /* your custom bullet */
+    margin-left: -1.2em; /* align bullet with text */
+}
+
+
 
 
 /* Default styles (for desktop) */
