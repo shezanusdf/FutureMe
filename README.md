@@ -159,7 +159,7 @@ TimeCapsule/
 
 ##  Acknowledgments
 
-- Inspired by [emailyourfutureself.com][(https://www.futureme.org/](https://www.emailyourfutureself.com/))
+- Inspired by [emailyourfutureself.com](https://www.emailyourfutureself.com/)
 - UI inspired by classic Windows 95 aesthetic
 - Built with love for people who want to reflect on their journey
 
