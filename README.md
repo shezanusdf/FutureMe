@@ -1,16 +1,6 @@
-# TimeCapsule
-
-> Write a letter to your future self. No login required.
-
-[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://shezanusdf.github.io/FutureMe/)
-[![Firebase](https://img.shields.io/badge/Firebase-Firestore-orange)](https://firebase.google.com/)
-
-![TimeCapsule-preview](https://github.com/user-attachments/assets/828a6c16-1f80-40af-a093-06b810c9e467)
-
 ## What is TimeCapsule?
 
-TimeCapsule is a minimalist web app that lets you send emails to your future self—up to 5 years ahead. No authentication, no distractions, no complexity. Just open the app, write your heart out, and schedule it.
-
+TimeCapsule is a web app that lets you send emails to your future self—up to 5 years ahead.
 ##  Features
 
 -  **Schedule up to 5 years** - Set any future date for delivery
@@ -19,21 +9,19 @@ TimeCapsule is a minimalist web app that lets you send emails to your future sel
 -  **Fully responsive** - Beautiful on desktop, tablet, and mobile
 
 
-## Tech Stack
-
 ### Frontend
-- **HTML5** - Semantic markup
-- **CSS3** - Custom styling with rem units for responsiveness
-- **Vanilla JavaScript** - No frameworks, pure ES6+
-- **Firebase Web SDK** - Firestore integration
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?style=for-the-badge&logo=github&logoColor=white)
 
 ### Backend
-- **Firebase Firestore** - NoSQL database for scheduled emails
-- **Python 3.10** - Email automation script
-- **GitHub Actions** - Serverless cron job runner
-- **Gmail SMTP** - Email delivery service
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Firestore](https://img.shields.io/badge/Firestore-FF6F00?style=for-the-badge&logo=firebase&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
 
-## 📋 How It Works
+##  How It Works
 
 ```
 User writes letter
@@ -159,96 +147,7 @@ TimeCapsule/
         └── send_emails.yml # GitHub Actions workflow
 ```
 
-##  Security & Privacy
 
-- **No user authentication** - We never store passwords or personal data beyond what you provide
-- **Write-only Firestore** - Frontend can only create documents, not read others' emails
-- **Backend-only reads** - Only GitHub Actions (via Admin SDK) can query the database
-- **Secrets management** - All credentials stored as GitHub secrets, never in code
-- **HTTPS only** - All connections encrypted
-
-##  Cost
-
-**$0/month** for reasonable usage:
-
-| Service | Free Tier | Your Usage |
-|---------|-----------|------------|
-| Firebase Firestore | 50K reads, 20K writes/day | ~1 write per email, ~1 read per send |
-| GitHub Actions | 2,000 minutes/month | ~1 minute/day |
-| Gmail SMTP | 500 emails/day | Depends on your users |
-| GitHub Pages | Unlimited for public repos | Static hosting |
-
-**Total: FREE** for thousands of users 
-
-##  Customization
-
-### Change Email Send Time
-
-Edit `.github/workflows/send_emails.yml`:
-
-```yaml
-schedule:
-  - cron: '0 14 * * *'  # 2 PM UTC instead of 9 AM
-```
-
-Use [crontab.guru](https://crontab.guru/) to generate cron expressions.
-
-### Customize Email Template
-
-Edit the `send_email()` function in `send_emails.py`:
-
-```python
-html = f"""
-<html>
-  <body style="your-custom-styles">
-    {letter_content}
-  </body>
-</html>
-"""
-```
-
-### Change Maximum Future Date
-
-Edit validation in `script.js`:
-
-```javascript
-fiveYearsFromNow.setFullYear(fiveYearsFromNow.getFullYear() + 10); // Allow 10 years
-```
-
-##  Troubleshooting
-
-### Emails Not Sending
-
-1. Check GitHub Actions logs (Actions tab → Send Scheduled Emails)
-2. Verify Gmail App Password (not your regular password!)
-3. Check spam folder
-4. Ensure Firestore has documents with today's date
-
-### Frontend Not Saving
-
-1. Open browser console (F12) for errors
-2. Verify Firebase config is correct
-3. Check Firestore security rules allow writes
-4. Ensure you're not in incognito mode (localStorage won't work)
-
-### GitHub Actions Failing
-
-1. Verify all 3 secrets are set correctly
-2. Check Python script logs for errors
-3. Ensure `requirements.txt` is in repo root
-4. Verify workflow file is in `.github/workflows/`
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-**Please maintain the minimalist philosophy.** We're not adding social features, analytics, or unnecessary complexity.
 
 ##  To-Do
 
@@ -264,10 +163,9 @@ Contributions are welcome! Here's how:
 - UI inspired by classic Windows 95 aesthetic
 - Built with love for people who want to reflect on their journey
 
-<div align="center">
 
 **⭐ Star this repo if you found it helpful!**
 
 Made with <3 and Coffee.
 
-</div>
+
