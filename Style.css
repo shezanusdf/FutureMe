@@ -1,57 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 
+/* Base font size is 16px by default in browsers */
+/* 1rem = 16px */
+
 body {
-    margin : 0;
-    padding : 0;
-    background : #ffffff;
-    font-family : 'Inter', sans-serif;
-    color : #8f8a87ff;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    font-family: 'Inter', sans-serif;
+    color: #8f8a87ff;
 }
 
 .content {
-    max-width : 700px;
-    margin-left : 70px;
-    padding : 40px 20px;
-    text-align : left;
-    line-height : 1.6;
-    box-sizing : border-box;
-
+    max-width: 43.75rem; /* 700px */
+    margin-left: 4.375rem; /* 70px */
+    padding: 2.5rem 1.25rem; /* 40px 20px */
+    text-align: left;
+    line-height: 1.6;
+    box-sizing: border-box;
 }
 
 nav {
-    font-size : 1.3rem;
-    font-family : 'Inter';
-    display : flex;
-    left : 1.3;
-    gap : 10px;
-    color : #000080;
+    font-size: 1.3rem;
+    font-family: 'Inter';
+    display: flex;
+    left: 1.3;
+    gap: 0.625rem; /* 10px */
+    color: #000080;
 }
 
 /* HEADING */
 h1 {
-    font-size : 4rem;
-    letter-spacing : -1.5px;
+    font-size: 4rem; /* 64px */
+    letter-spacing: -0.09375rem; /* -1.5px */
     color: #1C1C1E;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px */
 }
-h3{
-    font-size : 1.5rem;
-    font-weight : 600;
+
+h3 {
+    font-size: 1.5rem; /* 24px */
+    font-weight: 600;
     color: #6b6767;
-    letter-spacing : -0.5px;
-    margin-bottom : -0.7rem
+    letter-spacing: -0.03125rem; /* -0.5px */
+    margin-bottom: -0.7rem;
 }
-p{
-    font-size : 1.3rem;
-    font-weight : 500;
-    letter-spacing : -0.5px;
-    margin-bottom : 20px;
+
+p {
+    font-size: 1.3rem; /* 20.8px */
+    font-weight: 500;
+    letter-spacing: -0.03125rem; /* -0.5px */
+    margin-bottom: 1.25rem; /* 20px */
 }
+
 p, .star-list {
     font-size: 1.3rem;
     font-weight: 500;
-    letter-spacing: -0.5px;
-    margin-bottom: 20px;
+    letter-spacing: -0.03125rem;
+    margin-bottom: 1.25rem;
 }
 
 .star-list {
@@ -64,27 +69,25 @@ p, .star-list {
     margin-left: -1.2em; /* align bullet with text */
 }
 
-
 /* Letter container */
 #letter-container {
     display: flex;
     justify-content: flex-start;
-    margin-top: 40px;
-    margin-left: 70px; /* aligns with .content */
-    padding-right: 20px; /* optional, keeps breathing room */
+    margin-top: 2.5rem; /* 40px */
+    margin-left: 4.375rem; /* 70px - aligns with .content */
+    padding-right: 1.25rem; /* 20px - optional, keeps breathing room */
 }
 
 #letter-window.minimized #window-body {
     display: none;
 }
 
-
 /* Retro window */
 #letter-window {
-    width: 600px;
+    width: 37.5rem; /* 600px */
     max-width: 90%;
-    border: 2px solid #888;
-    box-shadow: 5px 5px 0 #555; /* old-school shadow */
+    border: 0.125rem solid #888; /* 2px */
+    box-shadow: 0.3125rem 0.3125rem 0 #555; /* 5px 5px - old-school shadow */
     background: #f0f0f0;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -94,44 +97,30 @@ p, .star-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #000080;
-    color: #fff;
-    padding: 5px 10px;
-    font-weight: bold;
-    font-size: 0.9rem;
-    text-shadow: 1px 1px #00000066;
-}
-
-/* Window buttons (close, minimize, maximize) */
-/* Title bar */
-#title-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background: #000080; /* classic Win95 blue */
     color: white;
-    padding: 3px 4px;
+    padding: 0.1875rem 0.25rem; /* 3px 4px */
     font-family: 'Courier New', monospace;
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* 14.4px */
     user-select: none;
 }
 
 /* Window control container */
 .win-controls {
     display: flex;
-    gap: 6px;
-    padding-left: 4px;
+    gap: 0.375rem; /* 6px */
+    padding-left: 0.25rem; /* 4px */
 }
 
 /* Stoplight buttons (Mac-style) */
 .win-btn {
-    width: 12px;
-    height: 12px;
+    width: 0.75rem; /* 12px */
+    height: 0.75rem; /* 12px */
     padding: 0;
     border-radius: 50%;
     border: none;
     cursor: pointer;
-    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.25);
+    box-shadow: inset 0 0 0 0.0625rem rgba(0,0,0,0.25); /* 1px */
     font-size: 0; /* hide text symbols */
 }
 
@@ -161,15 +150,14 @@ p, .star-list {
     width: 90%;
 }
 
-
 /* Editable letter area */
 #letter {
-    min-height: 250px;
-    padding: 15px;
+    min-height: 15.625rem; /* 250px */
+    padding: 0.9375rem; /* 15px */
     background: #fff;
     color: #000;
-    font-size: 1rem;
-    letter-spacing: -0.5px;
+    font-size: 1rem; /* 16px */
+    letter-spacing: -0.03125rem; /* -0.5px */
     outline: none; /* remove focus border */
     white-space: pre-wrap; /* preserve line breaks */
 }
@@ -181,28 +169,28 @@ p, .star-list {
 }
 
 #letter-form {
-    margin-top: 15px;
+    margin-top: 0.9375rem; /* 15px */
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    padding: 10px;
+    gap: 0.5rem; /* 8px */
+    padding: 0.625rem; /* 10px */
 }
 
 #letter-form label {
     font-family: 'Courier New', monospace;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* 14.4px */
 }
 
 #letter-form input {
     font-family: 'Courier New', monospace;
     font-size: 0.9rem;
-    padding: 4px 6px;
-    border: 2px solid #fff;
+    padding: 0.25rem 0.375rem; /* 4px 6px */
+    border: 0.125rem solid #fff; /* 2px */
     border-bottom-color: #808080;
     border-right-color: #808080;
     background: #c0c0c0;
-    box-shadow: inset -1px -1px 0 #fff, inset 1px 1px 0 #808080;
+    box-shadow: inset -0.0625rem -0.0625rem 0 #fff, inset 0.0625rem 0.0625rem 0 #808080; /* -1px -1px, 1px 1px */
 }
 
 #letter-form input:focus {
@@ -210,83 +198,132 @@ p, .star-list {
 }
 
 #schedule-button {
-    margin-top: 8px;
+    margin-top: 0.5rem; /* 8px */
     background: #c0c0c0;
-    border: 2px solid #fff;
+    border: 0.125rem solid #fff; /* 2px */
     border-bottom-color: #808080;
     border-right-color: #808080;
-    padding: 5px 15px;
+    padding: 0.3125rem 0.9375rem; /* 5px 15px */
     font-family: 'Courier New', monospace;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: inset -1px -1px 0 #fff, inset 1px 1px 0 #808080;
+    box-shadow: inset -0.0625rem -0.0625rem 0 #fff, inset 0.0625rem 0.0625rem 0 #808080;
 }
 
 #schedule-button:active {
-    box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #808080;
+    box-shadow: inset 0.0625rem 0.0625rem 0 #fff, inset -0.0625rem -0.0625rem 0 #808080;
 }
 
+/* RESPONSIVE BREAKPOINTS */
 
-/* Default styles (for desktop) */
-
-/* Tablets */
-@media (max-width: 1024px) {
+/* Tablets (1024px and below) */
+@media (max-width: 64rem) {
     .content {
-        margin-right: 200px;  /* give more breathing room */
-        margin-left: 40px;
-        padding: 30px 20px;
+        margin-right: 12.5rem; /* 200px - give more breathing room */
+        margin-left: 2.5rem; /* 40px */
+        padding: 1.875rem 1.25rem; /* 30px 20px */
     }
-    h1 { font-size: 3rem; }
-    p { font-size: 1.1rem; }
+    
+    h1 { 
+        font-size: 3rem; /* 48px */
+    }
+    
+    p { 
+        font-size: 1.1rem; /* 17.6px */
+    }
+    
+    #letter-container {
+        margin-left: 2.5rem; /* 40px */
+    }
 }
 
-/* Phones */
-@media (max-width: 768px) {
-     .vertical-navbar {
+/* Phones (768px and below) */
+@media (max-width: 48rem) {
+    .vertical-navbar {
         top: 0;
         left: 0;
         right: 0;
         height: auto;
         flex-direction: row;
         justify-content: left;
-        gap: 20px;
-        padding: 10px 25px;
+        gap: 1.25rem; /* 20px */
+        padding: 0.625rem 1.5625rem; /* 10px 25px */
         background: transparent; /* no background */
-        border-bottom: none;     /* remove border */
-        z-index: 1000;           /* stay above content */
+        border-bottom: none; /* remove border */
+        z-index: 1000; /* stay above content */
     }
 
-     .content {
+    .content {
         margin-left: auto;
         margin-right: auto;
-        padding-top: 50px;   /* space for navbar height */
-        max-width: 90%;      /* shrink to fit small screens */
+        padding-top: 3.125rem; /* 50px - space for navbar height */
+        max-width: 90%; /* shrink to fit small screens */
+    }
+    
+    #letter-container {
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        padding: 0 1.25rem; /* 20px */
     }
 
-    h1 { font-size: 2rem; }
-    p { font-size: 1rem; }
+    h1 { 
+        font-size: 2rem; /* 32px */
+    }
+    
+    p, .star-list { 
+        font-size: 1rem; /* 16px */
+    }
+    
+    #letter-window {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
-/* Very small phones */
-@media (max-width: 480px) {
-     .vertical-navbar {
+/* Very small phones (480px and below) */
+@media (max-width: 30rem) {
+    .vertical-navbar {
         position: fixed;
         top: 0;
         right: 0;
         left: 0;
-        flex-direction: row;         /* horizontal */
-        justify-content: left;     /* center links */
+        flex-direction: row; /* horizontal */
+        justify-content: left; /* center links */
         text-align: center;
-        font-size:1.2rem
-        padding: 15px 10px;
-        gap: 20px;      
+        font-size: 1.2rem;
+        padding: 0.9375rem 0.625rem; /* 15px 10px */
+        gap: 1.25rem; /* 20px */
     }
+    
     .content {
-        margin-right: 0;     /* full width text */
-        margin-left: 15px;
-        padding-top:20px;
-        padding: 15px 10px;
+        margin-right: 0; /* full width text */
+        margin-left: 0.9375rem; /* 15px */
+        padding-top: 1.25rem; /* 20px */
+        padding: 0.9375rem 0.625rem; /* 15px 10px */
     }
-    h1 { font-size: 1.8rem; }
-    p { font-size: 0.95rem; }
+    
+    #letter-container {
+        margin-top: 1.25rem; /* 20px */
+        padding: 0 0.625rem; /* 10px */
+    }
+    
+    h1 { 
+        font-size: 1.8rem; /* 28.8px */
+    }
+    
+    p, .star-list { 
+        font-size: 0.95rem; /* 15.2px */
+    }
+    
+    #letter {
+        min-height: 12.5rem; /* 200px - smaller on mobile */
+        font-size: 0.9rem; /* 14.4px */
+    }
+    
+    #letter-form {
+        gap: 0.375rem; /* 6px - tighter spacing */
+    }
 }
+
+
